@@ -21,7 +21,7 @@ from myapp import urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url('^', include('django.contrib.auth.urls')),
+    url(r'^manage/', include('django.contrib.auth.urls')),
     url(r'',include('myapp.urls',namespace = 'myapp')),
 
 
