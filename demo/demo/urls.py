@@ -22,11 +22,13 @@ from myapp import urls
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('^', include('django.contrib.auth.urls')),
-    url(r'',include('myapp.urls',namespace = 'myapp'))
+    url(r'',include('myapp.urls',namespace = 'myapp')),
+
 
 ]
 
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 
