@@ -1,5 +1,12 @@
+{% extends "custom/base_site.html" %}
+{% load i18n %}
 
-<h1 style="text-align: center;">log out susses fully</h1>
+{% block breadcrumbs %}<div class="breadcrumbs"><a href="/">{% trans 'Home' %}</a></div>{% endblock %}
 
-<p><a href="/login/">Log in again</a></p>
+{% block content %}
 
+<p>{% trans "Thanks for spending some quality time with the Web site today." %}</p>
+
+<p><a href="/">{% trans 'Log in again' %}</a></p>
+
+{% endblock %}
